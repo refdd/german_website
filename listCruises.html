@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" type="text/css" />
+    <link rel="stylesheet" href="styles/listPackage.css" type="text/css" />
+
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/swiper-bundle.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <title>german website</title>
+  </head>
+  <body>
+    <div class="headerList position-relative">
+      <div class="">
+        <div class="container px-3 py-2">
+          <nav class="nav_container py-2">
+            <div class="row align-items-center">
+              <!-- menue bar icon  -->
+              <div class="col-2 d-block d-md-none">
+                <div
+                  class="iconMneu d-flex justify-content-center align-items-center"
+                >
+                  <div class="openIcon">
+                    <i class="fa-solid fa-bars"></i>
+                  </div>
+                  <div class="closeIcon">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- image  -->
+              <div class="imgae_logo col-5 col-md-3">
+                <img src="assets/logo.svg" alt="" />
+              </div>
+              <!-- links -->
+              <ul class="links_container d-none d-md-flex col-md-7">
+                <li class="">
+                  <a href=""> Home </a>
+                </li>
+                <li class="">
+                  <a href="listPackages.html"> Packages </a>
+                </li>
+                <li class="active">
+                  <a href="listCruises.html"> Nile Cruises </a>
+                </li>
+                <li class="">
+                  <a href="listBlog.html"> Blogs </a>
+                </li>
+                <li class="">
+                  <a href="contactUs.html"> ContactUs </a>
+                </li>
+              </ul>
+              <!-- buttom inquery -->
+              <div class="col-5 col-md-2">
+                <div class="buttom_inquri">
+                  <button><a href="TailorMake.html">Tailor-make</a></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- links menu -->
+            <div
+              class="col-12 menu_Bar d-flex flex-column mt-3 gap-3 d-md-none"
+            >
+              <ul class="mb-0 linksMenu px-3">
+                <li class="border-bottom py-3"><a href="/"> Home</a></li>
+                <li class="border-bottom py-3">
+                  <a href="listPackages.html"> Packages</a>
+                </li>
+                <li class="border-bottom py-3">
+                  <a href="listCruises.html"> Nile Cruise</a>
+                </li>
+                <li class="border-bottom py-3">
+                  <a href="listBlog.html">Blogs</a>
+                </li>
+                <li class="border-bottom border-3 py-3">
+                  <a href="contactUs.html">ContactUs</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="headerListContent position-absolute">
+        <span>Nile Cruises</span>
+      </div>
+    </div>
+    <!-- select your state -->
+    <div class="yourState">
+      <div class="container">
+        <div class="d-flex flex-column gap-4 px-3 py-4">
+          <p>
+            Morem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+            turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+            nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+            tellus elit sed risus. Maecenas eget condimentum velit, sit amet
+            feugiat lectus. Class aptent taciti sociosqu ad.
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="sortSection position-relative">
+              <div class="btnYourState px-4 py-3">
+                <button>Select your State</button>
+                <i class="fa-solid fa-arrow-down"></i>
+              </div>
+              <div class="sortbox">
+                <ul class="d-flex flex-column">
+                  <li class="d-flex align-items-center py-2 px-4">
+                    <input type="checkbox" hidden id="chck1" />
+                    <label class="tab-label" for="chck1">All</label>
+                  </li>
+                  <li class="d-flex align-items-center py-2 px-4">
+                    <input type="checkbox" hidden id="chck" />
+                    <label class="tab-label" for="chck1">Price (Lowest)</label>
+                  </li>
+                  <li class="d-flex align-items-center py-2 px-4">
+                    <input type="checkbox" hidden id="chck1" />
+                    <label class="tab-label" for="chck1">Price (Highest)</label>
+                  </li>
+                  <li class="d-flex align-items-center py-2 px-4">
+                    <input type="checkbox" hidden id="chck1" />
+                    <label class="tab-label" for="chck1">Long Duration</label>
+                  </li>
+                  <li class="d-flex align-items-center py-2 px-4">
+                    <input type="checkbox" hidden id="chck1" />
+                    <label class="tab-label" for="chck1">Short Duration</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- list card package  -->
+    <div class="container mt-5">
+      <div class="packageContainer">
+        <div class="row g-4">
+          <!-- card -->
+          <div class="col-12 col-md-4">
+            <a href="singleCruises.html">
+              <div class="cardTour p-3 d-flex flex-column gap-3">
+                <div class="position-relative w-100 h-100">
+                  <div class="swiper TourCardSlider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (2).jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (3).jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (1).jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination-cardTour"></div>
+                  </div>
+                </div>
+                <!-- tile and duration -->
+                <div class="d-flex flex-column gap-1">
+                  <div class="titleTour">
+                    <span>Grand Egyptian Museum </span>
+                  </div>
+                  <div class="duration">
+                    <span>5 Days</span>
+                  </div>
+                </div>
+                <!-- desc -->
+                <div class="descCard">
+                  Enjoy the beauty of Egypt with this 5-day Nile cruise and
+                  spend Easter...
+                </div>
+                <!-- price -->
+                <div
+                  class="d-flex justify-content-between align-items-center px-2"
+                >
+                  <div class="price d-flex gap-2 align-items-center">
+                    <span>From</span> <span>us$1769</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- card -->
+          <div class="col-12 col-md-4">
+            <a href="singleCruises.html">
+              <div class="cardTour p-3 d-flex flex-column gap-3">
+                <div class="position-relative w-100 h-100">
+                  <div class="swiper TourCardSlider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (3).jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (1).jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (2).jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination-cardTour"></div>
+                  </div>
+                </div>
+                <!-- tile and duration -->
+                <div class="d-flex flex-column gap-1">
+                  <div class="titleTour">
+                    <span>Grand Egyptian Museum </span>
+                  </div>
+                  <div class="duration">
+                    <span>5 Days</span>
+                  </div>
+                </div>
+                <!-- desc -->
+                <div class="descCard">
+                  Enjoy the beauty of Egypt with this 5-day Nile cruise and
+                  spend Easter...
+                </div>
+                <!-- price -->
+                <div
+                  class="d-flex justify-content-between align-items-center px-2"
+                >
+                  <div class="price d-flex gap-2 align-items-center">
+                    <span>From</span> <span>us$1769</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- card -->
+          <div class="col-12 col-md-4">
+            <a href="singleCruises.html">
+              <div class="cardTour p-3 d-flex flex-column gap-3">
+                <div class="position-relative w-100 h-100">
+                  <div class="swiper TourCardSlider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (2).jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (3).jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (4).jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination-cardTour"></div>
+                  </div>
+                </div>
+                <!-- tile and duration -->
+                <div class="d-flex flex-column gap-1">
+                  <div class="titleTour">
+                    <span>Grand Egyptian Museum </span>
+                  </div>
+                  <div class="duration">
+                    <span>5 Days</span>
+                  </div>
+                </div>
+                <!-- desc -->
+                <div class="descCard">
+                  Enjoy the beauty of Egypt with this 5-day Nile cruise and
+                  spend Easter...
+                </div>
+                <!-- price -->
+                <div
+                  class="d-flex justify-content-between align-items-center px-2"
+                >
+                  <div class="price d-flex gap-2 align-items-center">
+                    <span>From</span> <span>us$1769</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- card -->
+          <div class="col-12 col-md-4">
+            <a href="singleCruises.html">
+              <div class="cardTour p-3 d-flex flex-column gap-3">
+                <div class="position-relative w-100 h-100">
+                  <div class="swiper TourCardSlider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (2).jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (3).jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (4).jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination-cardTour"></div>
+                  </div>
+                </div>
+                <!-- tile and duration -->
+                <div class="d-flex flex-column gap-1">
+                  <div class="titleTour">
+                    <span>Grand Egyptian Museum </span>
+                  </div>
+                  <div class="duration">
+                    <span>5 Days</span>
+                  </div>
+                </div>
+                <!-- desc -->
+                <div class="descCard">
+                  Enjoy the beauty of Egypt with this 5-day Nile cruise and
+                  spend Easter...
+                </div>
+                <!-- price -->
+                <div
+                  class="d-flex justify-content-between align-items-center px-2"
+                >
+                  <div class="price d-flex gap-2 align-items-center">
+                    <span>From</span> <span>us$1769</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- card -->
+          <div class="col-12 col-md-4">
+            <a href="singleCruises.html">
+              <div class="cardTour p-3 d-flex flex-column gap-3">
+                <div class="position-relative w-100 h-100">
+                  <div class="swiper TourCardSlider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (4).jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (2).jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (1).jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination-cardTour"></div>
+                  </div>
+                </div>
+                <!-- tile and duration -->
+                <div class="d-flex flex-column gap-1">
+                  <div class="titleTour">
+                    <span>Grand Egyptian Museum </span>
+                  </div>
+                  <div class="duration">
+                    <span>5 Days</span>
+                  </div>
+                </div>
+                <!-- desc -->
+                <div class="descCard">
+                  Enjoy the beauty of Egypt with this 5-day Nile cruise and
+                  spend Easter...
+                </div>
+                <!-- price -->
+                <div
+                  class="d-flex justify-content-between align-items-center px-2"
+                >
+                  <div class="price d-flex gap-2 align-items-center">
+                    <span>From</span> <span>us$1769</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- card -->
+          <div class="col-12 col-md-4">
+            <a href="singleCruises.html">
+              <div class="cardTour p-3 d-flex flex-column gap-3">
+                <div class="position-relative w-100 h-100">
+                  <div class="swiper TourCardSlider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (2).jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (3).jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (1).jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination-cardTour"></div>
+                  </div>
+                </div>
+                <!-- tile and duration -->
+                <div class="d-flex flex-column gap-1">
+                  <div class="titleTour">
+                    <span>Grand Egyptian Museum </span>
+                  </div>
+                  <div class="duration">
+                    <span>5 Days</span>
+                  </div>
+                </div>
+                <!-- desc -->
+                <div class="descCard">
+                  Enjoy the beauty of Egypt with this 5-day Nile cruise and
+                  spend Easter...
+                </div>
+                <!-- price -->
+                <div
+                  class="d-flex justify-content-between align-items-center px-2"
+                >
+                  <div class="price d-flex gap-2 align-items-center">
+                    <span>From</span> <span>us$1769</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- card -->
+          <div class="col-12 col-md-4">
+            <a href="singleCruises.html">
+              <div class="cardTour p-3 d-flex flex-column gap-3">
+                <div class="position-relative w-100 h-100">
+                  <div class="swiper TourCardSlider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (1).jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (2).jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (1).jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination-cardTour"></div>
+                  </div>
+                </div>
+                <!-- tile and duration -->
+                <div class="d-flex flex-column gap-1">
+                  <div class="titleTour">
+                    <span>Grand Egyptian Museum </span>
+                  </div>
+                  <div class="duration">
+                    <span>5 Days</span>
+                  </div>
+                </div>
+                <!-- desc -->
+                <div class="descCard">
+                  Enjoy the beauty of Egypt with this 5-day Nile cruise and
+                  spend Easter...
+                </div>
+                <!-- price -->
+                <div
+                  class="d-flex justify-content-between align-items-center px-2"
+                >
+                  <div class="price d-flex gap-2 align-items-center">
+                    <span>From</span> <span>us$1769</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- card -->
+          <div class="col-12 col-md-4">
+            <a href="singleCruises.html">
+              <div class="cardTour p-3 d-flex flex-column gap-3">
+                <div class="position-relative w-100 h-100">
+                  <div class="swiper TourCardSlider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (1).jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (2).jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (1).jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination-cardTour"></div>
+                  </div>
+                </div>
+                <!-- tile and duration -->
+                <div class="d-flex flex-column gap-1">
+                  <div class="titleTour">
+                    <span>Grand Egyptian Museum </span>
+                  </div>
+                  <div class="duration">
+                    <span>5 Days</span>
+                  </div>
+                </div>
+                <!-- desc -->
+                <div class="descCard">
+                  Enjoy the beauty of Egypt with this 5-day Nile cruise and
+                  spend Easter...
+                </div>
+                <!-- price -->
+                <div
+                  class="d-flex justify-content-between align-items-center px-2"
+                >
+                  <div class="price d-flex gap-2 align-items-center">
+                    <span>From</span> <span>us$1769</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- card -->
+          <div class="col-12 col-md-4">
+            <a href="singleCruises.html">
+              <div class="cardTour p-3 d-flex flex-column gap-3">
+                <div class="position-relative w-100 h-100">
+                  <div class="swiper TourCardSlider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (1).jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (2).jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgCardTour">
+                          <img src="assets/tourImage (1).jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination-cardTour"></div>
+                  </div>
+                </div>
+                <!-- tile and duration -->
+                <div class="d-flex flex-column gap-1">
+                  <div class="titleTour">
+                    <span>Grand Egyptian Museum </span>
+                  </div>
+                  <div class="duration">
+                    <span>5 Days</span>
+                  </div>
+                </div>
+                <!-- desc -->
+                <div class="descCard">
+                  Enjoy the beauty of Egypt with this 5-day Nile cruise and
+                  spend Easter...
+                </div>
+                <!-- price -->
+                <div
+                  class="d-flex justify-content-between align-items-center px-2"
+                >
+                  <div class="price d-flex gap-2 align-items-center">
+                    <span>From</span> <span>us$1769</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-wight py-5">
+      <!-- people say abutus-->
+      <div class="container pt-4">
+        <div
+          class="d-flex justify-content-between align-items-center px-3 headerSection"
+        >
+          <span>What people say about us</span>
+        </div>
+        <div class="row gy-4 mt-5">
+          <!-- card -->
+          <div class="col-12 col-md-4">
+            <div class="reviewCard d-flex flex-column gap-3">
+              <div class="d-flex flex-column gap-2">
+                <div class="starReview d-flex align-items-center gap-1">
+                  <i class="fa-solid fa-star"></i>
+                  <span>4.5</span>
+                </div>
+                <div class="descReview d-flex flex-column">
+                  <p>
+                    Words can’t describe how amazing everything was. Our tour
+                    guides were the best. Highly recommend it if you are looking
+                    for a unique Christmas trip!
+                  </p>
+                  <span>see more</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <div class="autherImg">
+                  <img src="assets/author (2).jpg" alt="" />
+                </div>
+                <div class="infoAuthor d-flex flex-column gap-">
+                  <span class="name">Eilen Victor</span>
+                  <span class="duration">1 Week</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="col-12 col-md-4">
+            <div class="reviewCard d-flex flex-column gap-3">
+              <div class="d-flex flex-column gap-2">
+                <div class="starReview d-flex align-items-center gap-1">
+                  <i class="fa-solid fa-star"></i>
+                  <span>4.5</span>
+                </div>
+                <div class="descReview d-flex flex-column">
+                  <p>
+                    Words can’t describe how amazing everything was. Our tour
+                    guides were the best. Highly recommend it if you are looking
+                    for a unique Christmas trip!
+                  </p>
+                  <span>see more</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <div class="autherImg">
+                  <img src="assets/author (1).jpg" alt="" />
+                </div>
+                <div class="infoAuthor d-flex flex-column gap-">
+                  <span class="name">Eilen Victor</span>
+                  <span class="duration">1 Week</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="col-12 col-md-4">
+            <div class="reviewCard d-flex flex-column gap-3">
+              <div class="d-flex flex-column gap-2">
+                <div class="starReview d-flex align-items-center gap-1">
+                  <i class="fa-solid fa-star"></i>
+                  <span>4.5</span>
+                </div>
+                <div class="descReview d-flex flex-column">
+                  <p>
+                    Words can’t describe how amazing everything was. Our tour
+                    guides were the best. Highly recommend it if you are looking
+                    for a unique Christmas trip!
+                  </p>
+                  <span>see more</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <div class="autherImg">
+                  <img src="assets/author (2).jpg" alt="" />
+                </div>
+                <div class="infoAuthor d-flex flex-column gap-">
+                  <span class="name">Eilen Victor</span>
+                  <span class="duration">1 Week</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- seemore btn -->
+        <div
+          class="d-flex justify-content-end align-items-center px-3 headerSection"
+        >
+          <div class="btn-seeMore py-2 px-4 mt-5">
+            <button>View all reviews</button>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Let’s talk -->
+      <div class="container mt-4">
+        <div class="letsTalkContainer">
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <div class="d-flex flex-column gap-3">
+                <div class="letsTalkImg">
+                  <img src="assets/letTalk.jpg" alt="" />
+                </div>
+                <div class="contentLetsTalk">
+                  <p>
+                    Don't hesitate to use our contact us form for any questions,
+                    suggestions, or concerns you may have. We are here to make
+                    your travel experience as seamless and enjoyable as
+                    possible. and explore
+                    <span>our Frequently Asked Questions (FAQs)</span> section
+                    for comprehensive information, helpful tips, and expert
+                    advice
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="letsTalk py-3 px-2">
+                <div class="headerLetsTalk">
+                  <span>Talk with our sales team</span>
+                </div>
+                <form action="" class="fromLetsTalk">
+                  <div class="row gy-3 mt-3">
+                    <div class="col-6 col-md-12">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Name"
+                        aria-label=" example"
+                      />
+                    </div>
+                    <div class="col-6 col-md-12">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Email"
+                        aria-label=" example"
+                      />
+                    </div>
+                    <div class="col-6 col-md-12">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Number"
+                        aria-label=" example"
+                      />
+                    </div>
+                    <div class="col-6 col-md-12">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Nationality</option>
+                        <option value="1">Egypt</option>
+                        <option value="2">saudi arabia</option>
+                        <option value="3">usa</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Reason</option>
+                        <option value="1">Egypt</option>
+                        <option value="2">saudi arabia</option>
+                        <option value="3">usa</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <textarea
+                        class="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                        placeholder="More Information"
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <div class="d-flex justify-content-end">
+                        <div class="btnForm px-4 py-2">
+                          <button>Send</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="bg-dark py-2">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-6 col-md-4">
+            <div class="logFooter">
+              <img src="assets/logo.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <ul class="footerLinks d-flex flex-column gap-4">
+              <li class="">
+                <span>Home</span>
+              </li>
+              <li class="">
+                <span>Packages</span>
+              </li>
+              <li class="">
+                <span>Nile Cruises</span>
+              </li>
+              <li class="">
+                <span>Blogs</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="contactUsFooter">
+              <span class="header py-3">Contact us</span>
+              <ul class="d-flex flex-column gap-3 mt-3">
+                <li class="d-flex gap-2 align-items-center">
+                  <i class="fa-regular fa-envelope"></i>
+                  <span>Info@egyptvoyage.com</span>
+                </li>
+                <li class="d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-phone"></i>
+                  <span>0000000000</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="js/listTour.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/homeSlider.js"></script> -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/CardTourSlider.js"></script>
+  </body>
+</html>

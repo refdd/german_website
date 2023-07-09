@@ -1,0 +1,197 @@
+.headerTailor_make {
+  background-image: url(../assets/tailorMake.jpg);
+  width: 100%;
+  height: 290px;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+.headerTailor_make .h_tailorMake {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 100%;
+}
+.headerTailor_make .h_tailorMake p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+  color: #ffffff;
+  text-shadow: 0px 4px 50px rgba(255, 255, 255, 0.1),
+    4px 4px 20px rgba(0, 0, 0, 0.25);
+  text-transform: capitalize;
+}
+/*   */
+.headerTailor_make .h_tailorMake p span:nth-of-type(1) {
+  text-transform: uppercase;
+  color: #2eb67d;
+  font-size: 30px;
+}
+.headerTailor_make::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0) 111.89%
+  );
+}
+
+.accordion-item {
+  border-radius: 8px !important;
+}
+
+.accordion-button {
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  line-height: 19px !important;
+  text-align: justify !important;
+  color: #ffffff !important;
+  background: #114b5f !important;
+}
+.accordion-item.stepFrom .accordion-button::after {
+  background-image: url(../assets/whiteArrow.svg) !important;
+}
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(90deg) !important;
+}
+.fromStepOne .headerFrom span {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #114b5f;
+}
+.inputFlight {
+  display: none !important;
+}
+.inputFlight.show {
+  display: block !important;
+}
+.fromStep label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4e5255;
+}
+.fromStep input {
+  background: #ffffff;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+}
+.fromStep input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #82888e;
+}
+.fromStepHeader {
+  border-bottom: 1px solid var(--taxt-900, #4e5255);
+  background: #fff;
+  padding: 20px;
+  cursor: pointer;
+}
+.fromStepHeader span {
+  color: #4e5255;
+  font-size: 16px;
+  font-weight: 700;
+}
+.fromStepHeader img {
+  transition: all 0.3s;
+}
+.fromStepHeader.active img {
+  transform: rotate(90deg);
+}
+.fromStepTowHeader {
+  border-bottom: 1px solid var(--taxt-900, #4e5255);
+  background: #fff;
+  padding: 20px;
+  cursor: pointer;
+}
+.fromStepTowHeader span {
+  color: #4e5255;
+  font-size: 16px;
+  font-weight: 700;
+}
+.fromStepTowHeader img {
+  transition: all 0.3s;
+}
+.fromStepTowHeader.active img {
+  transform: rotate(90deg);
+}
+.fromStepbody {
+  max-height: 0;
+  overflow: hidden;
+}
+.fromStepbody.active {
+  -webkit-transition: max-height ease-in-out 1s;
+  -moz-transition: max-height ease-in-out 1s;
+  -ms-transition: max-height ease-in-out 1s;
+  -o-transition: max-height ease-in-out 1s;
+  transition: max-height ease-in-out 1s;
+  overflow: hidden;
+  max-height: 913px;
+}
+.fromStepTowbody {
+  max-height: 0;
+  overflow: hidden;
+}
+.fromStepTowbody.active {
+  -webkit-transition: max-height ease-in-out 1s;
+  -moz-transition: max-height ease-in-out 1s;
+  -ms-transition: max-height ease-in-out 1s;
+  -o-transition: max-height ease-in-out 1s;
+  transition: max-height ease-in-out 1s;
+  overflow: hidden;
+  max-height: 913px;
+}
+@media only screen and (min-width: 786px) {
+  .fromSteps {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .btnformTailorMake {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .fromStepbody {
+    max-height: 380px;
+    overflow: hidden;
+    max-width: 0;
+  }
+  .fromStepbody.active {
+    -webkit-transition: max-width ease-in-out 1s;
+    -moz-transition: max-width ease-in-out 1s;
+    -ms-transition: max-width ease-in-out 1s;
+    -o-transition: max-width ease-in-out 1s;
+    transition: max-width ease-in-out 1s;
+    overflow: hidden;
+    max-width: 913px;
+  }
+  .fromStepTowbody {
+    max-height: 210px;
+    max-width: 0;
+    overflow: hidden;
+  }
+  .fromStepTowbody.active {
+    -webkit-transition: max-width ease-in-out 1s;
+    -moz-transition: max-width ease-in-out 1s;
+    -ms-transition: max-width ease-in-out 1s;
+    -o-transition: max-width ease-in-out 1s;
+    transition: max-width ease-in-out 1s;
+    overflow: hidden;
+    max-width: 913px;
+  }
+  .fromStepHeader {
+    border-bottom: none;
+    border-right: 1px solid var(--taxt-900, #4e5255);
+  }
+  .fromStepTowHeader {
+    border-bottom: none;
+    border-right: 1px solid var(--taxt-900, #4e5255);
+  }
+}

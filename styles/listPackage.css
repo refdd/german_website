@@ -1,0 +1,116 @@
+.links_container li {
+  color: #fff;
+}
+.links_container li.active {
+  border-bottom: 1px solid var(--main-color);
+  font-weight: 700;
+}
+.iconMneu i {
+  color: #114b5f;
+}
+.headerList {
+  background-image: url(../assets/headerImage.jpg);
+  width: 100%;
+  height: 200px;
+  background-position: top center;
+  background-size: cover;
+}
+.headerListContent {
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+.headerListContent span {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.yourState {
+  background: #ffffff;
+  margin-top: -49px;
+  z-index: 20;
+  position: relative;
+}
+.yourState p {
+  color: #686d72;
+  font-size: 16px;
+  font-weight: 400;
+}
+.yourState .btnYourState {
+  border-radius: 8px;
+  border: 1px solid var(--orange-500, #f26430);
+  background: var(--fafafa, #fafafa);
+  width: 214px;
+}
+.yourState .btnYourState button {
+  color: #4e5255;
+  font-size: 16px;
+  font-weight: 400;
+}
+.yourState .btnYourState i {
+  color: #4e5255;
+}
+.sortbox {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  bottom: 0;
+  width: 85%;
+}
+.sortbox {
+  overflow: hidden;
+  max-height: 0;
+}
+.sortbox.active {
+  -webkit-transition: max-height 1s;
+  -moz-transition: max-height 1s;
+  -ms-transition: max-height 1s;
+  -o-transition: max-height 1s;
+  transition: max-height 1s;
+  overflow: hidden;
+  max-height: 319px;
+}
+.sortbox ul {
+}
+.sortbox li {
+  background: #fff;
+  border-bottom: 1px solid #ffffff;
+  cursor: pointer;
+  transition: background-color ease-in 0.4;
+}
+.gridMode i {
+  font-size: 35px;
+  cursor: pointer;
+}
+.listMode i {
+  color: #3d3d3d;
+  font-size: 28px;
+  cursor: pointer;
+}
+.gridMode.active i {
+  color: #2eb67d;
+}
+.listMode.active i {
+  color: #2eb67d;
+}
+.packageContainer.show {
+  width: 70%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 786px) {
+  .headerList {
+    height: 423px;
+  }
+  .headerListContent {
+    left: 11%;
+  }
+  .headerListContent span {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 45px;
+  }
+  .sortbox li:hover {
+    background: var(--main-color);
+  }
+}

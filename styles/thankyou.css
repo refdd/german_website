@@ -1,0 +1,65 @@
+.thankYouContainer {
+  background: #ffffff;
+  border: 1px solid #70939f;
+  box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+.thankYouContainer .messageThank span {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 38px;
+  color: #4e5255;
+}
+.descThank p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #4e5255;
+}
+.descThank p .email {
+  font-weight: 700;
+}
+.thankLinks span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration-line: underline;
+  color: #0249ff;
+}
+.thankLinks i {
+  color: #0249ff;
+  font-size: 20px;
+  font-size: 20px;
+}
+@media only screen and (min-width: 786px) {
+  .thankYouContainer {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .thankYouContainer .messageThank span {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #4e5255;
+  }
+  .descThank p {
+    color: #4e5255;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .descThank p .email {
+    font-weight: 700;
+  }
+  .thankLinks span {
+    color: #0249ff;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .thankLinks i {
+    color: #0249ff;
+    font-size: 20px;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,147 @@
+.headerBlogList {
+  background-image: url(../assets/blogList.jpg);
+  height: 428px;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+.headerBlogList::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(.jpg);
+  border-radius: 16px;
+}
+.contentBlogList {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.contentBlogList .header p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.contentBlogList .header span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.contentBlogList .desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.searchListContainer {
+  background-color: #fafafa;
+}
+.searchListContainer .header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4e5255;
+}
+.searchListContainer .categories .categorie {
+  background: #ffffff;
+  border: 0.5px solid #114b5f;
+  border-radius: 8px 8px 8px 0px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.searchListContainer .categories label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4e5255;
+}
+.searchListContainer .categorie.active label {
+  color: #1a936f;
+}
+.searchListContainer .categories .categorie:hover label {
+  color: #1a936f;
+}
+.searchBlog input {
+  background: #ffffff;
+  border: 0.5px solid #82888e;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.searchBlog input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #82888e;
+}
+.btn-search {
+  right: -13% !important;
+}
+.imgArticl img {
+  max-width: 100%;
+  width: 100%;
+  height: 102px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.articleCard {
+  background: #ffffff;
+  border: 0.5px solid #757a80;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1),
+    inset 0px 4px 20px rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+}
+.contentArticl span:nth-of-type(1) {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4e5255;
+}
+.contentArticl span:nth-of-type(2) {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4e5255;
+}
+.popularArticles {
+  background: #fafafa;
+  border-top: 0.5px solid #114b5f;
+}
+@media only screen and (min-width: 786px) {
+  .contentBlogList .header p {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 45px;
+    color: #ffffff;
+  }
+  .contentBlogList .desc {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media only screen and (max-width: 786px) {
+  .modileSearch {
+    position: fixed;
+    bottom: 0;
+    max-height: 0;
+    overflow: hidden;
+    z-index: 100;
+    transition: max-height ease-in 0.4s;
+  }
+  .modileSearch.show {
+    max-height: 400px;
+  }
+  .searchListContainer {
+    overflow-y: scroll;
+    height: 400px;
+  }
+  .buttonFilter {
+    cursor: pointer;
+  }
+}

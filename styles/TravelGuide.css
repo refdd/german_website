@@ -1,0 +1,31 @@
+.mapButton {
+  border: 0.5px solid #1a936f;
+  border-radius: 8px;
+}
+.mapButton button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4e5255;
+}
+.mapButton i {
+  font-size: 20px;
+  color: #3d3d3d;
+}
+.iconVideo {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  cursor: pointer;
+  font-size: 65px;
+}
+.placeholderVideo.active {
+  display: none;
+}
+.videoContainer {
+  display: none;
+}
+.videoContainer.active {
+  display: block;
+}
