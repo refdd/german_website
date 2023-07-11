@@ -9,7 +9,7 @@
 .headerTailor_make .h_tailorMake {
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 4%;
   width: 100%;
 }
 .headerTailor_make .h_tailorMake p {
@@ -83,12 +83,12 @@
   border: 1px solid #f1f1f1;
   border-radius: 8px;
 }
-.fromStep input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #82888e;
+.form-control-lg {
+  color: #82888e !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
 }
+
 .fromStepHeader {
   border-bottom: 1px solid var(--taxt-900, #4e5255);
   background: #fff;
@@ -149,6 +149,7 @@
   overflow: hidden;
   max-height: 913px;
 }
+
 @media only screen and (min-width: 786px) {
   .fromSteps {
     width: 60%;

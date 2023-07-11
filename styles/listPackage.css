@@ -1,6 +1,3 @@
-.links_container li {
-  color: #fff;
-}
 .links_container li.active {
   border-bottom: 1px solid var(--main-color);
   font-weight: 700;

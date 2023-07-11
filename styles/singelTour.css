@@ -221,6 +221,9 @@
 .itineraryFeatuer .desc {
   font-weight: 400;
 }
+.galleryImage {
+  cursor: pointer;
+}
 .galleryImage img {
   max-width: 100%;
   width: 100%;
@@ -250,6 +253,7 @@
   font-size: 16px;
   font-weight: 400;
   cursor: pointer;
+  text-decoration-line: underline;
 }
 .feature .duration p {
   color: #686d72;
@@ -316,7 +320,9 @@
 }
 .swiper-button-next:after,
 .swiper-button-prev:after {
-  font-size: 38px !important;
+  font-size: 20px !important;
+  color: #1e1e1e;
+  font-weight: bold;
 }
 .descSingelCard {
   color: #4e5255;
@@ -368,7 +374,9 @@
   font-weight: 700;
 }
 .accordion-item.generalInfo {
-  border: none !important;
+  border-radius: 8px !important;
+  border: 1px solid #efefef !important;
+  background: #fafafa !important;
 }
 .AccomodationHeader span {
   color: #4e5255;
@@ -400,12 +408,17 @@
   .galleryImage.main img {
     height: 100%;
   }
+  /* .tapsRadius {
+    border-radius: 0px 0px 20px 0px;
+    background: #fafafa;
+    overflow: hidden;
+  } */
 }
 @media only screen and (max-width: 786px) {
   .fixe_Nav_Taps {
     position: sticky;
     top: 0;
-    z-index: 3000;
+    z-index: 1999;
     background-color: #fff;
     width: 100%;
   }

@@ -69,7 +69,7 @@ ul {
 .buttom_inquri button {
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
   text-align: center;
   color: #ffffff;
@@ -151,7 +151,7 @@ ul {
   top: 50%;
   right: 0%;
   transform: translate(-50%, -50%);
-  background: #1a936f;
+  background: var(--main-color);
   border-radius: 8px;
 }
 .btn-search button {
@@ -163,6 +163,10 @@ ul {
 }
 .btn-search i {
   color: #ffffff;
+}
+.headerSection {
+  padding-top: 32px;
+  padding-bottom: 24px;
 }
 .headerSection span {
   font-weight: 700;
@@ -210,8 +214,8 @@ ul {
 }
 .iconSearch {
   top: 50%;
-  right: 3%;
-  transform: translate(-50%, -50%);
+  right: 0%;
+  transform: translate(-21%, -50%);
   background-color: var(--main-color);
   padding: 3px 9px;
   border-radius: 500%;
@@ -330,8 +334,8 @@ ul {
   color: #4e5255;
 }
 .cardBlog .btnBlog {
-  background: #1a936f;
-  border: 0.5px solid #1a936f;
+  background: var(--main-color);
+  border: 0.5px solid var(--main-color);
   border-radius: 8px;
 }
 .cardBlog button {
@@ -352,6 +356,19 @@ ul {
   border-radius: 16px;
 }
 /* card review */
+.reviewBox {
+  border-radius: 8px 8px 0px 0px;
+  border: 0.5px solid #efefef;
+  background: #fff;
+  padding: 16px;
+}
+.autherbox {
+  padding: 16px;
+}
+.reviewCard {
+  border-radius: 8px;
+  border: 0.5px solid var(--gray, #efefef);
+}
 .reviewCard i {
   color: #fccf66;
   font-size: 13px;
@@ -502,7 +519,9 @@ ul {
 }
 .TourCardSlider .swiper-button-next:after,
 .swiper-button-prev:after {
-  font-size: 20px !important;
+  font-size: 17px !important;
+  color: #1e1e1e;
+  font-weight: bold;
 }
 
 .swiper-pagination-bullet {
@@ -511,6 +530,18 @@ ul {
 }
 .swiper-pagination-bullet-active {
   background-color: #fff !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  background: #fff;
+  height: 30px !important;
+  border-radius: 100%;
+  width: 30px !important;
+}
+.reviewCounter span {
+  color: #6a6a6a;
+  font-size: 14px;
+  font-weight: 400;
 }
 @media only screen and (max-width: 786px) {
   .splide__arrow {
@@ -732,14 +763,14 @@ ul {
   }
   .TourCardSlider:hover .swiper-button-next,
   .TourCardSlider:hover .swiper-button-prev {
-    display: block;
+    display: flex;
   }
   .headerSection span {
     font-size: 24px;
   }
   .TourCardSlider .swiper-button-next:after,
   .swiper-button-prev:after {
-    font-size: 25px !important;
+    font-size: 20px !important;
   }
   .letsTalkContainer {
     width: 80%;

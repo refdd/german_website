@@ -36,7 +36,7 @@
   </head>
   <body>
     <div class="fixe_Nav_Taps">
-      <div class="w-100 px-3 py-2">
+      <div class="container bg-white">
         <nav class="nav_container py-2">
           <div class="row align-items-center">
             <!-- menue bar icon  -->
@@ -104,30 +104,35 @@
       </div>
       <div class="bg-gray">
         <div class="container">
-          <ul
-            class="tapsContainer d-flex align-items-center my-3 gap-3 py-2 my-sm-0 mb-sm-3"
-          >
-            <li class="py-2 px-4 active">
-              <a href="#overview">
-                <span class="">Überblick</span>
-              </a>
-            </li>
-            <li class="py-2 px-4">
-              <a href="#itinerary">
-                <span>Itinerary</span>
-              </a>
-            </li>
-            <li class="py-2 px-4">
-              <a href="#Preise">
-                <span>Preise</span>
-              </a>
-            </li>
-            <li class="py-2 px-4">
-              <a href="#reviews">
-                <span>Rezensionen</span>
-              </a>
-            </li>
-          </ul>
+          <div class="row g-0">
+            <div class="col-12 col-md-6">
+              <ul
+                class="tapsContainer d-flex align-items-center my-3 gap-2 py-2 my-sm-0 mb-sm-3"
+              >
+                <li class="py-2 px-3 active">
+                  <a href="#overview">
+                    <span class="">Überblick</span>
+                  </a>
+                </li>
+                <li class="py-2 px-3">
+                  <a href="#itinerary">
+                    <span>Itinerary</span>
+                  </a>
+                </li>
+                <li class="py-2 px-3">
+                  <a href="#Preise">
+                    <span>Preise</span>
+                  </a>
+                </li>
+                <li class="py-2 px-3">
+                  <a href="#reviews">
+                    <span>Rezensionen</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6 bg-white"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -168,7 +173,7 @@
           </div>
         </div>
         <div class="col-12">
-          <div class="row g-2 mt-4">
+          <div class="row g-2 mt-md-4 mt-1">
             <div class="col-12 col-md-7">
               <div class="galleryImage main h-100">
                 <img src="assets/headerList.jpg" alt="" />
@@ -857,47 +862,40 @@
         </div>
       </div>
     </div>
-    <div class="bg-wight py-5" id="reviews">
+    <div class="bg-wight pb-5" id="reviews">
       <!-- people say abutus-->
-      <div class="container pt-4">
+      <div class="container">
         <div
-          class="d-flex justify-content-between align-items-center px-3 headerSection"
+          class="d-flex justify-content-between align-items-center headerSection"
         >
           <span>What people say about us</span>
         </div>
-        <div class="row gy-4 mt-5">
-          <!-- card -->
-          <div class="col-12 col-md-4">
-            <div class="reviewCard d-flex flex-column gap-3">
-              <div class="d-flex flex-column gap-2">
-                <div class="starReview d-flex align-items-center gap-1">
-                  <i class="fa-solid fa-star"></i>
-                  <span>4.5</span>
-                </div>
-                <div class="descReview d-flex flex-column">
-                  <p>
-                    Words can’t describe how amazing everything was. Our tour
-                    guides were the best. Highly recommend it if you are looking
-                    for a unique Christmas trip!
-                  </p>
-                  <span>see more</span>
-                </div>
+        <div class="row gy-4 gy-md-0">
+          <div class="col-12">
+            <div class="reviewCounter d-flex align-items-center gap-2 pb-2">
+              <div class="d-flex align-items-center gap-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M5.52152 0.577802C5.66502 0.104607 6.33498 0.104608 6.47848 0.577803L7.46397 3.82748C7.52789 4.03825 7.7222 4.18237 7.94245 4.18237H11.2011C11.6771 4.18237 11.8838 4.78455 11.5082 5.07692L8.81392 7.17428C8.65065 7.30138 8.58253 7.51592 8.64257 7.71393L9.6575 11.0607C9.79906 11.5275 9.2568 11.9 8.87189 11.6003L6.30713 9.60383C6.12651 9.46323 5.87349 9.46323 5.69287 9.60383L3.12811 11.6003C2.7432 11.9 2.20094 11.5275 2.3425 11.0607L3.35743 7.71393C3.41747 7.51592 3.34935 7.30138 3.18608 7.17428L0.491763 5.07692C0.116172 4.78455 0.322922 4.18237 0.798896 4.18237H4.05755C4.2778 4.18237 4.47211 4.03825 4.53603 3.82748L5.52152 0.577802Z"
+                    fill="#4E5255"
+                  />
+                </svg>
+                <span>4.92</span>
               </div>
-              <div class="d-flex align-items-center gap-2">
-                <div class="autherImg">
-                  <img src="assets/author (2).jpg" alt="" />
-                </div>
-                <div class="infoAuthor d-flex flex-column gap-">
-                  <span class="name">Eilen Victor</span>
-                  <span class="duration">1 Week</span>
-                </div>
-              </div>
+              <span>.</span>
+              <span>20 reviews</span>
             </div>
           </div>
           <!-- card -->
           <div class="col-12 col-md-4">
-            <div class="reviewCard d-flex flex-column gap-3">
-              <div class="d-flex flex-column gap-2">
+            <div class="reviewCard d-flex flex-column">
+              <div class="reviewBox d-flex flex-column gap-2">
                 <div class="starReview d-flex align-items-center gap-1">
                   <i class="fa-solid fa-star"></i>
                   <span>4.5</span>
@@ -905,13 +903,13 @@
                 <div class="descReview d-flex flex-column">
                   <p>
                     Words can’t describe how amazing everything was. Our tour
-                    guides were the best. Highly recommend it if you are looking
-                    for a unique Christmas trip!
+                    guides wauere the best. Highly recommend it if you are
+                    looking for a unique Christmas trip!
                   </p>
                   <span>see more</span>
                 </div>
               </div>
-              <div class="d-flex align-items-center gap-2">
+              <div class="autherbox d-flex align-items-center gap-2">
                 <div class="autherImg">
                   <img src="assets/author (1).jpg" alt="" />
                 </div>
@@ -924,8 +922,8 @@
           </div>
           <!-- card -->
           <div class="col-12 col-md-4">
-            <div class="reviewCard d-flex flex-column gap-3">
-              <div class="d-flex flex-column gap-2">
+            <div class="reviewCard d-flex flex-column">
+              <div class="reviewBox d-flex flex-column gap-2">
                 <div class="starReview d-flex align-items-center gap-1">
                   <i class="fa-solid fa-star"></i>
                   <span>4.5</span>
@@ -933,13 +931,13 @@
                 <div class="descReview d-flex flex-column">
                   <p>
                     Words can’t describe how amazing everything was. Our tour
-                    guides were the best. Highly recommend it if you are looking
-                    for a unique Christmas trip!
+                    guides wauere the best. Highly recommend it if you are
+                    looking for a unique Christmas trip!
                   </p>
                   <span>see more</span>
                 </div>
               </div>
-              <div class="d-flex align-items-center gap-2">
+              <div class="autherbox d-flex align-items-center gap-2">
                 <div class="autherImg">
                   <img src="assets/author (2).jpg" alt="" />
                 </div>
@@ -950,11 +948,37 @@
               </div>
             </div>
           </div>
+          <!-- card -->
+          <div class="col-12 col-md-4">
+            <div class="reviewCard d-flex flex-column">
+              <div class="reviewBox d-flex flex-column gap-2">
+                <div class="starReview d-flex align-items-center gap-1">
+                  <i class="fa-solid fa-star"></i>
+                  <span>4.5</span>
+                </div>
+                <div class="descReview d-flex flex-column">
+                  <p>
+                    Words can’t describe how amazing everything was. Our tour
+                    guides wauere the best. Highly recommend it if you are
+                    looking for a unique Christmas trip!
+                  </p>
+                  <span>see more</span>
+                </div>
+              </div>
+              <div class="autherbox d-flex align-items-center gap-2">
+                <div class="autherImg">
+                  <img src="assets/author (1).jpg" alt="" />
+                </div>
+                <div class="infoAuthor d-flex flex-column gap-">
+                  <span class="name">Eilen Victor</span>
+                  <span class="duration">1 Week</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- seemore btn -->
-        <div
-          class="d-flex justify-content-end align-items-center px-3 headerSection"
-        >
+        <div class="d-flex justify-content-end align-items-center px-3">
           <div class="btn-seeMore py-2 px-4 mt-5">
             <button>View all reviews</button>
             <i class="fa-solid fa-arrow-right-long"></i>
@@ -965,7 +989,7 @@
     <!-- gernral info -->
     <!-- price -->
     <div class="container pb-5">
-      <div class="row mt-5" id="Preise">
+      <div class="row" id="Preise">
         <div
           class="headerItinerary d-flex justify-content-between align-items-center"
         >
