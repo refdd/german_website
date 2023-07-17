@@ -409,13 +409,16 @@
     height: 100%;
   }
   .imgGallerSlider img {
-    height: 500px;
+    height: 450px;
   }
   /* .tapsRadius {
     border-radius: 0px 0px 20px 0px;
     background: #fafafa;
     overflow: hidden;
   } */
+  .galleryConteiner .gallerSlider {
+    width: 70%;
+  }
 }
 @media only screen and (max-width: 786px) {
   .fixe_Nav_Taps {
