@@ -408,6 +408,9 @@
   .galleryImage.main img {
     height: 100%;
   }
+  .imgGallerSlider img {
+    height: 500px;
+  }
   /* .tapsRadius {
     border-radius: 0px 0px 20px 0px;
     background: #fafafa;
